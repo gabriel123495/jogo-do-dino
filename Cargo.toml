@@ -5,3 +5,8 @@ edition = "2024"
 
 [dependencies]
 macroquad = "0.4.13"
+
+[[bin]]
+name = "dino"
+path = "src/main.rs"
+

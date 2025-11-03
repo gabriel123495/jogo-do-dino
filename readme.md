@@ -5,9 +5,10 @@ eu não quero trabalhar com jogos mas a professora da minha escola disse que era
 digite: 
 ```
 cd dino
-cargo run 
+cargo bild --release
+cargo rustc --release --bin dino -- -C link-args=/ENTRY:mainCRTStartup -C link-args=/SUBSYSTEM:WINDOWS
 ``` 
 # extra 
 perdi muito tempo aprendendo a usar o macroquad e fazendo esse jogo do dino então fiquei com preguiça de recompilar pra Web Assembly
 
-e tmbem criei um executavel na pasta na pasta  ```bin ``` pra não ter que precisar instalar o rustup e suas depencias pesadas (ocupando cerca de 9gb)
+e tmbem criei um executavel na pasta na pasta  ```executavel``` pra não ter que precisar instalar o rustup e suas depencias pesadas (ocupando cerca de 9gb)
