@@ -1,4 +1,16 @@
 use macroquad::prelude::*;
+use macroquad::window::Conf;
+
+fn window_conf() -> Conf {
+    Conf {
+        window_title: "Jogo do Dino".to_string(),
+        fullscreen: false,
+        window_width: 800,
+        window_height: 450,
+        high_dpi: false,
+        ..Default::default()
+    }
+}
 
 struct Cacto {
     x: f32,
@@ -28,7 +40,7 @@ impl Cacto {
     }
 }
 
-#[macroquad::main("Dino Game")]
+#[macroquad::main(window_conf)]
 async fn main() {
     let dino_texture = load_texture("assets/dino.png").await.unwrap();
 
