@@ -8,6 +8,9 @@ cd dino
 cargo bild --release
 cargo rustc --release --bin dino -- -C link-args=/ENTRY:mainCRTStartup -C link-args=/SUBSYSTEM:WINDOWS
 ``` 
+# aviso
+como qualquer jogo moderno fiz ele ser nativamente incompativel com linux/macOS
+
 # extra 
 perdi muito tempo aprendendo a usar o macroquad e fazendo esse jogo do dino então fiquei com preguiça de recompilar pra Web Assembly
 
